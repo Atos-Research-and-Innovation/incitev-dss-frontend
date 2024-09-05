@@ -32,9 +32,7 @@ test/tmp/**
 **/.#*
 .nvmrc
 
-# examples
-examples/**/out
-examples/**/.env*.local
+# Environment
 **/.env.local
 .env
 
