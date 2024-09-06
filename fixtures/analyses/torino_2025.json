@@ -1,0 +1,49 @@
+{
+  "name": "Torino 2025",
+  "status": "running",
+  "ubmY": {
+    "input": {
+      "total_urban_trips": [89243],
+      "total_incoming_trips": [50515],
+      "total_outgoing_trips": [28423],
+      "average_number_trips": [1],
+      "bevs_ratio": 0.05,
+      "phevs_ratio": 0
+    },
+    "config": {
+      "night_ratio": {
+        "home_public": 0.3,
+        "home_private": 0.35
+      },
+      "day_ratio": {
+        "work_public": 0.15,
+        "work_private": 0.15,
+        "other_public": 0.05,
+        "other_semi_public": 0,
+        "fast": 0
+      },
+      "km_travelled_dist": {
+        "10": 0.1729,
+        "20": 0.2751,
+        "30": 0.2121,
+        "50": 0.1991,
+        "75": 0.0886,
+        "100": 0.0262,
+        "150": 0.0168,
+        "200": 0.0092
+      }
+    }
+  },
+  "powerY": {
+    "CIY": true,
+    "AY": 2025,
+    "TDP": "Weekdays"
+  },
+  "max_epoch": 3,
+  "simulation_days": 3,
+  "outputsY": {
+    "LW": 50000,
+    "TNP": 5000
+  },
+  "default": true
+}
