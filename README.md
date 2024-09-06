@@ -1,4 +1,4 @@
-# INCIT-EV Decisions Support System Frontend
+# INCIT-EV Decision Support System Frontend
 
 This repository contains the source code of the frontend of the INCIT-EV Decision Support System (DSS). 
 The backend code can be found [in this repository](https://github.com/LINKS-FCC/INCIT-EV_DSS).
@@ -51,6 +51,18 @@ cd src/frontend
 yarn install
 yarn build
 yarn dev run
+```
+
+Alternatively, you can use the provided docker container:
+
+```
+docker run \
+    -it \
+    -p 3000:3000 \
+    -e DSS_BACKEND_BASE_URL=$DSS_BACKEND_BASE_URL \
+    -e NEXTAUTH_URL=$NEXTAUTH_URL \
+    -e NEXTAUTH_SECRET=$NEXTAUTH_SECRET \
+    ghcr.io/atos-research-and-innovation/incitev-dss-frontend:latest
 ```
 
 You can now access the DSS frontend at http://localhost:3000 .
